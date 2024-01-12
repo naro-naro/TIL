@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>array splice 예제</title>
+</head>
+<body>
+    <script>
+        // splice 문제
+        const fish = ['정어리', '고등어', '돌고래', '참치', '고래상어', '코끼리'];
+
+        // 1. splice 를 이용해 코끼리를 제거해보세요
+        // 2. 참치 다음에 다금바리를 추가해보세요
+        // 3. 돌고래를 제거하고 옥돔과 갈치를 추가해보세요
+
+        fish.splice(5,1) // 인덱스 5부터 값 1개 제거 (코끼리 제거)
+        fish.splice(4,0,'다금바리') //인덱스 4부터 값 0개를 제거하고 '다금바리' 추가
+        fish.splice(2,1,'옥돔','갈치') // 인덱스 2부터 값 1개를 제거하고 (돌고래 제거), '옥돔'과 '갈치' 추가
+
+        const fruits = ["apple", "banana", "cherry", "durian", "elderberry"];
+        console.log(fruits.slice(1, 4)); 
+        console.log(fruits.slice()); 
+        console.log(fruits.slice(0, 10));
+    </script>
+</body>
+</html>

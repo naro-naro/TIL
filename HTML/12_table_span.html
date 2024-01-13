@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>テーブルのセル結合</title>
+</head>
+<body>
+    <h1>セル結合</h1>
+    <hr>
+    <h2>rowspan: 上下のセルを行結合</h2>
+    <table border = "1">
+        <tr><td rowspan="3">三つのセルを行結合</td><td>1行2列</td><td>1行3列</td></tr>
+        <tr><td>2行2列</td><td rowspan="2">二つのセルを結合</td></tr>
+        <tr><td>3行2列</td></tr>
+    </table>
+    <hr>
+    <h2>colspan : 左右のセルを列結合</h2>
+    <table border = "1">
+        <tr><td colspan="3">三つのセルを列結合</td></tr>
+        <tr><td>2行1列</td><td>2行2列</td><td>2行3列</td></tr>
+        <tr><td>3行1列</td><td colspan="2">二つのセルを列結合</td></tr>
+    </table>
+</body>
+</html>

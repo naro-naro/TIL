@@ -61,24 +61,3 @@ lines(density(old), col="blue")
 
 library("languageR")
 head(ratings)
-
-# “Does the complex word appear less frequently than simplex word?”
-# 복잡한 단어와 단순한 단어의 빈도를 비교하여
-# 복잡한 단어가 단순한 단어보다 덜 나올까?
-
-# 컴플랙스 워드와 심플렉스 워드를 기술통계
-# 컴플렉스와 심플렉스 티-테스트
-# 적절한 레포트
-# 쉽게 해설
-
-# 컴플렉스로 사용되었을 때의 프리퀀시와
-# 심플렉스로 사용되었을 때의 프리퀀시를 비교
-
-# 심플렉스인지 컴플렉스인지에 따라서
-# 프리퀀시를 비교
-
-# subset으로 
-# 가급적 많은 그림을 그려보고
-# 많은 분석을 해보기
-
-# 코드와 워드파일 제출

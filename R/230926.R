@@ -97,25 +97,3 @@ sort(v_list1)
 
 result = sort(unique(v_list1))
 write.csv(result, "test.csv")
-
-#_______________________
-# Task:HW
-
-# dative : 3,4형식 동사
-
-# I gave you a book. --4형식) S V IO DO(np)
-# I gave a book to you. --3형식) S V O pp
-
-# RealizationOfRec & Verb
-# ‘give’, ‘cost’, ‘offer’, ‘pay’, ‘sell’ and ‘send’
-# 6개 단어들이 np로 많이 사용되었는지
-# pp로 많이 사용되었는지
-# 비율 계산
-
-# 특정 row에 접근하는 방법을 사용하여
-# 계산도 R의 코드를 이용 (손계산x)
-# 각각의 동사들을 비교하는 레포트
-# 형식X
-# 결과, 나의 분석해석, 코드를 레포트안에 쓰지 말것
-# 제출 : R코드, 레포트문서파일
-# 10/9 제출

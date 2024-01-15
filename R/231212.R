@@ -75,4 +75,3 @@ md.aov = aov(rt ~ Prime + Error(Subj/Prime), data=eng)
 summary(md.aov)
 
 # 0.00282 ** : 차이가 있다!
-# 17ppt 27page까지 기말범위

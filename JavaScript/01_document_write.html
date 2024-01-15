@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+</head>
+<body>
+    <h1>document.write()でテーブル作成</h1>
+    <hr>
+    <table border="1">
+        <script type="text/javascript">
+            var first = "オリックス";
+            let second = "ロッテ";
+            const third = "ソフトバンク";
+            const fourth = "楽天";
+            const fifth = "西武";
+            const sixth = "日本ハム";
+
+            document.write("<caption>2023 パ・リーグ 順位表</caption>")
+            document.write("<tr><th>順位</th><th>チーム名</th></tr>")
+            document.write("<tr><td>1</td><td>"+first+"</td></tr>")
+            document.write("<tr><td>2</td><td>"+second+"</td></tr>")
+            document.write("<tr><td>3</td><td>"+third+"</td></tr>")
+            document.write("<tr><td>4</td><td>"+fourth+"</td></tr>")
+            document.write("<tr><td>5</td><td>"+fifth+"</td></tr>")
+            document.write("<tr><td>6</td><td>"+sixth+"</td></tr>")
+        </script>
+    </table>
+</body>
+</html>

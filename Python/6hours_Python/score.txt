@@ -1,0 +1,4 @@
+math : 0
+english : 50
+science : 100
+history : 90

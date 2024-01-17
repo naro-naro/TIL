@@ -1,0 +1,6 @@
+str_input = input("input the radius of circle > ")
+num_input = float(str_input)
+print()
+print("radius : ", num_input)
+print("circumference : ", 3.14*2*num_input)
+print("area : ", 3.14*num_input**2)

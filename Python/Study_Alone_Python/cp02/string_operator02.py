@@ -1,0 +1,5 @@
+print("abcdefg"[-1])
+print("abcdefg"[-2])
+print("abcdefg"[-3])
+print("abcdefg"[-4])
+print("abcdefg"[-5])

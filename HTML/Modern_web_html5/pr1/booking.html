@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>레스토랑 예약</title>
+</head>
+<body>
+    <header>
+        <h2>레스토랑 예약하기</h2>
+    </header>
+    <section>
+        <form>
+            <fieldset>
+                <legend>예약자 정보</legend>
+                <label>예약자 : <input type="text" name="name"></label><br>
+                <label>휴대폰 : 
+                    <input type="tel" name="tel" placeholder="01*-000*-0000" pattern="01[0-9]{1}-[0-9]{3,4}-[0-9]{4}"></label><br>
+                <label>예약인원 : <select name="person" size="1">
+                    <option value="2">2명</option>
+                    <option value="3">3명</option>
+                    <option value="4" selected>4명</option>
+                    <option value="5">5명</option>
+                    <option value="6">6명</option>
+                    <option value="7">7명</option>
+                    <option value="8">8명</option>
+                </select></label>
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend>일자 선택 및 시간 선택</legend>
+                <label>날짜 : <input type="date" value="2021-10-01"></label><br>
+                <label>시간 : <input type="time" value="18:00"></label><br>
+                위치 : 
+                <label>본관<input type="radio" name="location" value="1" checked></label>
+                <label>별관<input type="radio" name="location" value="2"></label><br>
+                옵션 : 
+                <label>단독룸<input type="checkbox" value="1"></label>
+                <label>아기의자<input type="checkbox" value="2"></label>
+                <label>채식요리<input type="checkbox" value="3"></label>
+            </fieldset>
+            <br>
+            <input type="submit" value="예약">
+            <input type="reset" value="취소">
+        </form>
+    </section>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>중간고사 2번</title>
+    <style>
+        legend{font-size: 200%;}
+        #timeset{background-color: aqua; width: 300%; height: 300%;}
+        #timeset:hover{background-color: yellow;}
+        td:hover{transform: scale(3,3);}
+    </style>
+</head>
+<body>
+    <fieldset>
+        <legend>알람 설정</legend>
+        <label for id="timeset"><input type="time" value="06:00" ></label><br>
+        <table>
+            <tr>
+                <td><input type="checkbox" value="1"></td>
+                <td><input type="checkbox" value="2" checked></td>
+                <td><input type="checkbox" value="3" checked></td>
+                <td><input type="checkbox" value="4" checked></td>
+                <td><input type="checkbox" value="5" checked></td>
+                <td><input type="checkbox" value="6" checked></td>
+                <td><input type="checkbox" value="7"></label></td></tr>
+            <tr>
+                <td>일</td>
+                <td>월</td>
+                <td>화</td>
+                <td>수</td>
+                <td>목</td>
+                <td>금</td>
+                <td>토</td></tr>
+        </table><br>
+        <label>알람사운드  <select name="belltype" size="1">
+            <option value="1">Bell</option>
+            <option value="2">Ding Dong</option>
+            <option value="3">Beep</option>
+        </select></label><br>
+        <label>음량  0 <input type="range" min="0" max="15"  value="10" list="bellsound">
+              15
+        </label>
+    </fieldset><br>
+    <input type="reset" value="초기화">
+    <input type="submit" value="등록">
+    <input type="button" value="취소">
+</body>
+</html>

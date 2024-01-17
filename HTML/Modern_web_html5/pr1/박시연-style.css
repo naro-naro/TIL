@@ -1,0 +1,9 @@
+h2{color: hotpink; font-family: 'Times New Roman', Times, serif;}
+p:first-letter{color: red; font-size: 1.5em;}
+th{background-color: lightgray;}
+div{background-image: url("media/튤립.jpg");
+    background-size: 200px 200px;
+    background-position: center center;
+    background-repeat: repeat;}
+img{border-style: groove; border-color: palevioletred; border-width: 15px;
+   box-shadow: 10px 10px 10px olivedrab}

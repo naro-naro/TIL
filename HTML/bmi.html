@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>비만도 판정</title>
+    <style>
+        #state {font-size: 300%;}
+    </style>
+</head>
+<body>
+    <table border="1">
+        <script type="text/javascript">
+            var name = prompt("이름을 입력하세요...")
+            var height = prompt(name+"님의 키를 입력하세요...")
+            var weight = prompt(name+"님의 몸무게를 입력하세요...")
+            var bmi = weight/((height/100)**2)
+            bmi = Math.round(bmi*10)/10
+
+            if (bmi<18.5)
+                state = "저체중"
+            else if (bmi<25)
+                state = "정상"
+            else if (bmi<30)
+                state = "과체중"
+            else if (bmi>=30)
+                state = "비만"
+
+            document.write("<tr>")
+            document.write("<th>이름</th><td>"+name+"</td>")
+            document.write("</tr>")
+            
+            document.write("<tr>")
+            document.write("<th>키</th><td>"+height+"</td>")
+            document.write("</tr>")
+
+            document.write("<tr>")
+            document.write("<th>몸무게</th><td>"+weight+"</td>")
+            document.write("</tr>")
+
+            document.write("<tr>")
+            document.write("<th>BMI</th><td>"+bmi+"</td>")
+            document.write("</tr>")
+
+            document.write("<tr>")
+            document.write("<th>비만도</th>")
+            document.write("<td><a id='state'>"+state+"</td>")
+            document.write("</tr>")
+            
+        </script>
+        </table>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<!-- saved from url=(0047)file:///D:/Modern_web_html5/pr1/movingchar.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>움직이는 글자</title>
+    <style>
+        @keyframes www{0%{} 50%{font-size:300%; transform:translateX(200%);} 100%{} }
+        @keyframes html5{50%{font-size: 300%; transform: translateY(200px);} }
+        @keyframes javascript{50%{font-size: 300%; transform: translateY(-200px);} }
+        @keyframes css3{50%{font-size: 300%; transform: translateX(-200px);} }
+
+        div{display: inline-block; padding:10px; border-radius : 50px; color : white; font-weight: 900; transition:transform 5s}
+        div:hover{transform:rotate(180deg)}
+
+
+
+        #WWW
+            {background: black; position:fixed; left:0px; top:0px;
+            animation-name: www; animation-duration: 10s; animation-iteration-count: infinite;}
+        #HTML5
+            {background: red; position:fixed; right:0px; top:0px;
+            animation-name: html5; animation-duration: 10s; animation-iteration-count: infinite;}
+        #JavaScript
+            {background: blue; position:fixed; left:0px; bottom:0px; 
+            animation-name: javascript; animation-duration: 10s; animation-iteration-count: infinite;}
+        #CSS3
+            {background: green; position:fixed; right:0px; bottom:0px;
+            animation-name: css3; animation-duration: 10s; animation-iteration-count: infinite;}
+        
+    </style>
+</head>
+<body>
+    <div id="WWW">WWW</div>
+    <div id="HTML5">HTML5</div>
+    <div id="JavaScript">JavaScript</div>
+    <div id="CSS3">CSS3</div>
+
+</body></html>

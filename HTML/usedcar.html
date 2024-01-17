@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>중고차 검색</title>
+    <style>
+        div {display: inline-block;}
+        #black {background-color: black; color: white;}
+        #gray {background-color: gray; color: white;}
+        #etc {background-color: red; color: white;}
+    </style>
+</head>
+<body>
+    <div><h1>중고차 검색</h1></div>
+    
+    <br>
+    <form>
+            <table>
+                <tr>
+                    <td>자동차명 : </td>
+                    <td>
+                        <label><select name="car" size="1">
+                        <option value="0" selected>전체</option>
+                        <option value="1">그랜저</option>
+                        <option value="2">소나타</option>
+                        <option value="3">아반떼</option>
+                        </select></label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>차량색상 : </td>
+                    <td>
+                        <label><input type="radio" name="color" value="0" checked>전체</label><br>
+                        <label><input type="radio" name="color" value="1"><div id="black">검정색</div></label><br>
+                        <label><input type="radio" name="color" value="2"><div id="gray">회색</div></label><br>
+                        <label><input type="radio" name="color" value="3"><div id="white">흰색</div></label><br>
+                        <label><input type="radio" name="color" value="4"><div id="etc">기타</div></label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>정렬방식 : </td>
+                    <td>
+                        <label><select name="order" size="1">
+                            <option value="0" selected>주행거리 오름차순</option>
+                            <option value="1">주행거리 내림차순</option>
+                            <option value="2">가격 오름차순</option>
+                            <option value="3">가격 내림차순</option>
+                        </select></label>
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td>
+                        <label>
+                            <input type="reset" value="초기화">
+                            <input type="submit" value="검색">
+                        </label>
+                    </td>
+                </tr>
+            </table>
+    </form>
+
+</body>
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>멋진 극장</title>
+    <style> /*초기화*/
+        * {margin:0; padding:0;}
+        body {font-family: sans-serif;}
+        li {list-style: none;}
+        a {text-decoration: none;}
+        img {border: 0;}
+    </style>
+    <style> /*헤더*/
+        #main_header {width: 960px; margin: 0 auto; height: 160px; position: relative;}
+        #main_header > #title {position: absolute; left: 20px; top: 30px;}
+        #main_header > #main_gnb {position: absolute; right: 0; top: 0;}
+        #main_header > #main_lnb {position: absolute; right: 0; bottom: 10px;}
+    </style>
+    <style> /*타이틀*/
+        #title {color: navy;}
+    </style>
+    <style> /*메뉴1*/
+        #main_gnb > ul {overflow: hidden;}
+        #main_gnb > ul > li {float: left;}
+        #main_gnb > ul > li > a {display: block; padding: 3px 10px; border: 1px solid black;}
+        #main_gnb > ul > li > a:hover {background: black; color: white;}
+        #main_gnb > ul > li:first-child > a {border-radius: 10px 0 0 10px;}
+        #main_gnb > ul > li:last-child > a {border-radius: 0 10px 10px 0;}
+    </style>
+    <style> /*메뉴2*/
+        #main_lnb > ul {overflow: hidden;}
+        #main_lnb > ul > li {float: left;}
+        #main_lnb > ul > li > a {display: block; padding: 10px 20px; border: 1px solid black}
+        #main_lnb > ul > li > a:hover {background: black; color: white;}
+        #main_lnb > ul > li:first-child > a {border-radius: 10px 0 0 10px;}
+        #main_lnb > ul > li:last-child > a {border-radius: 0 10px 10px 0;}
+    </style>
+    <style>/*콘텐츠*/
+        #content {width: 960px; margin: 0 auto; overflow: hidden;}
+        #content > #main_section {width: 950px; float: left;}
+    </style>
+    <style>/*본문*/
+        #main_section > article.main_article {margin-bottom: 10px; padding: 20px; border: 1px solid black}
+        #main_section > article.main_article > p > img {width: 100px; height: 150px;}
+    </style>
+</head>
+<body>
+    <header id="main_header">
+        <div id="title">
+            <h1>멋진 극장</h1>
+            <h2>영화와 함께하는 멋진 삶</h2>
+        </div>
+        <nav id="main_gnb">
+            <ul>
+                <li><a href="#">극장 소개</a></li>
+                <li><a href="#">현재 상영작</a></li>
+                <li><a href="#">영화 예매</a></li>
+                <li><a href="#">예매 확인</a></li>
+            </ul>
+        </nav>
+        <nav id="main_lnb">
+            <ul>
+                <li><a href="#">극장 소개</a></li>
+                <li><a href="#">현재 상영작</a></li>
+                <li><a href="#">영화 예매</a></li>
+                <li><a href="#">예매 확인</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div id="content">
+        <section id="main_section">
+            <article class="main_article">
+                <h1>예매율 1위</h1>
+                <br>
+                <p>
+                    <img src="media/라라랜드.jpg">
+                    <ul>
+                        <li>라라랜드</li>
+                        <li>장르 : 드라마, 뮤지컬, 로맨스</li>
+                        <li>등급 : 12세 관람가</li>
+                        <li>출연 : 엠마스톤, 라이언고슬링</li>
+                        <li>평점 : ★8.91</li>
+                    </ul>
+                </p>
+        
+            </article>
+            <article class="main_article">
+                <h1>개봉 예정작</h1>
+                <br>
+                <p>
+                    <img src="media/중경삼림.jpg">
+                    <li>중경삼림</li>
+                    <li>장르 : 드라마</li>
+                    <li>등급 : 15세 관람가</li>
+                    <li>출연 : 임청하, 금성무, 양조위, 왕페이</li>
+                    <li>평점 : ★9.10</li>
+                </p>
+            </article>
+        </section>
+    </div>
+</body>
+</html>

@@ -1,18 +1,18 @@
-package ch04;
+package first_package;
 
 public class var02 {
 
 	public static void main(String[] args) {
 		double pi = 3.14;
 		double dt = Math.PI;
-		//ÀÚ¹Ù¿¡¼­ Á¦°øÇÏ´Â ¿øÁÖÀ²°ª
+		//ìë°”ì—ì„œ ì œê³µí•˜ëŠ” ì›ì£¼ìœ¨ê°’
 		double r = 10.0;
 		double area = r*r*pi;
 		double area2 = r*r*dt;
-		System.out.println("¹İÁö¸§ÀÌ "+r+"ÀÎ ¿øÀÇ ³ĞÀÌ´Â "+area+"ÀÔ´Ï´Ù.");
-		System.out.println("¹İÁö¸§ÀÌ "+r+"ÀÎ ¿øÀÇ ³ĞÀÌ´Â Á¤È®È÷´Â "+area2+"ÀÔ´Ï´Ù.");
+		System.out.println("ë°˜ì§€ë¦„ì´ "+r+"ì¸ ì›ì˜ ë„“ì´ëŠ” "+area+"ì…ë‹ˆë‹¤.");
+		System.out.println("ë°˜ì§€ë¦„ì´ "+r+"ì¸ ì›ì˜ ë„“ì´ëŠ” ì •í™•íˆëŠ” "+area2+"ì…ë‹ˆë‹¤.");
 
 	}
 
 }
-//À¯¸®¼ö º¯¼ö´Â double
+//ìœ ë¦¬ìˆ˜ ë³€ìˆ˜ëŠ” double

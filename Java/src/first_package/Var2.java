@@ -1,6 +1,6 @@
 package first_package;
 
-public class var01 {
+public class Var2 {
 
 	public static void main(String[] args) {
 		int a, b, c;

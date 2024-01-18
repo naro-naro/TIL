@@ -1,6 +1,6 @@
 package first_package;
 
-public class var04 {
+public class Var5 {
 
 	public static void main(String[] args) {
 		char ch;

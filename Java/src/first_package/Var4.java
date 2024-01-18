@@ -1,6 +1,6 @@
 package first_package;
 
-public class B_var02 {
+public class Var4 {
 
 	public static void main(String[] args) {
 		double pi, r, area;

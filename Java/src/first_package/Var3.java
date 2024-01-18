@@ -1,6 +1,6 @@
 package first_package;
 
-public class var02 {
+public class Var3 {
 
 	public static void main(String[] args) {
 		double pi = 3.14;

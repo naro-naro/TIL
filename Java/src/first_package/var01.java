@@ -1,4 +1,4 @@
-package ch04;
+package first_package;
 
 public class var01 {
 
@@ -19,7 +19,7 @@ public class var01 {
 		System.out.println();
 		
 		System.out.println(a+"\n"+b+"\n"+c);
-		//ÇÑÁÙ·Î ¾²°í½ÍÀ¸¸é \nÀ» »ç¿ëÇÏÀÚ
+		//í•œì¤„ë¡œ ì“°ê³ ì‹¶ìœ¼ë©´ \nì„ ì‚¬ìš©í•˜ì
 
 	}
 

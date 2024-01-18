@@ -1,4 +1,4 @@
-package first;
+package first_package;
 
 public class B_var02 {
 

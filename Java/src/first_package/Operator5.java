@@ -1,6 +1,6 @@
 package first_package;
 
-public class Opetator5 {
+public class Operator5 {
 
 	public static void main(String[] args) {
 		// && 논리곱 and

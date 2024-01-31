@@ -17,16 +17,16 @@ public class PrintStars1 {
 		int spaceCount = lineCount - 1;
 		int starCount = 1;
 		
-		for(int i = 0; i<lineCount; i++) { 		// 4줄 동안 반복
-			for(int j = 0; j<spaceCount; j++) { // 공백 개수 만큼 반복
+		for(int i = 0; i<lineCount; i++) { 		// n줄 동안 반복
+			for(int j = 0; j<spaceCount; j++) { // 공백 찍기
 				System.out.print(' ');
 			}
-			for(int j = 0; j<starCount; j++) {
-				System.out.print('*');
+			for(int j = 0; j<starCount; j++) {  // 별 찍기
+				System.out.print('*');			// 줄바꿈 안하고 이어붙여 찍기
 			}
 
-			spaceCount-=1;
-			starCount+=2;
+			spaceCount-=1;  		// 공백 개수 줄이기
+			starCount+=2;			// 별 개수 늘리기
 			System.out.println();
 
         }

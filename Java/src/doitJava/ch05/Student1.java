@@ -1,7 +1,7 @@
 package doitJava.ch05;
 
 // Student 클래스 만들기
-public class Student {	// class : 클래스를 만드는 예약어
+public class Student1 {	// class : 클래스를 만드는 예약어
 						// 클래스 이름 : Student (클래스 이름은 대문자로 시작)
 	int studentID;		// 멤버 변수 선언
 	String studentName;

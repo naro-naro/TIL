@@ -14,15 +14,15 @@ class Beauty extends Product implements DeliveryChangeCalculator {
 			} else {
 				DC = 1000;
 			}
-		} 
-		System.out.println(DC);
-		
-		if ((price>=30000) && (price < 100000)) {
-			DC -= 1000;
-		} 
-		System.out.println(DC);
-		
-		if (price >= 100000) {
+		} else if (price < 100000) {
+			if (weight >= 10) {
+				DC = 9000;
+			} else if (weight >= 3) {
+				DC = 4000;
+			} else {
+				DC = 0;
+			}
+		} else {
 			DC = 0;
 		}
 		return DC;

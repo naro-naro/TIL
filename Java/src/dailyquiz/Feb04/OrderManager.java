@@ -11,12 +11,14 @@ public class OrderManager {
 		int DCBl = blusher.getDeliveryChange(blusher.weight, blusher.price);
 		System.out.println("Delivery Change of " + blusher.getName() + " : " + DCBl);
 		
+		
 		Grocery banana = new Grocery();
 		banana.setName("delmonte banana");
 		banana.setPrice(5000);
 		banana.setWeight(2);
 		int DCBa = banana.getDeliveryChange(banana.weight, banana.price);
 		System.out.println("Delivery Change of " + banana.getName() + " : " + DCBa);
+		
 		
 		LargeAppliance tv = new LargeAppliance();
 		tv.setName("samsung tv");

@@ -15,7 +15,13 @@ class LargeAppliance extends Product implements DeliveryChangeCalculator {
 				DC = 1000;
 			}
 		} else if (price < 100000) {
-			DC = 5000;
+			if (weight >= 10) {
+				DC = 9000;
+			} else if (weight >= 3) {
+				DC = 4000;
+			} else {
+				DC = 0;
+			}
 		} else {
 			DC = 0;
 		}

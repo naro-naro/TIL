@@ -1,4 +1,4 @@
-package dailyquiz.Feb001;
+package dailyquiz.Feb01.inherit;
 // Feb01/Car.java와는 다른 패키지
 
 import dailyquiz.Feb01.Car;

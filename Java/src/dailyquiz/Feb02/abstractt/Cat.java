@@ -1,4 +1,4 @@
-package dailyquiz.Feb002;
+package dailyquiz.Feb02.abstractt;
 
 public class Cat extends Animal {
 	public Cat() {

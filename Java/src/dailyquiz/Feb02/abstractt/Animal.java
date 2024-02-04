@@ -1,4 +1,4 @@
-package dailyquiz.Feb002;
+package dailyquiz.Feb02.abstractt;
 
 // 추상클래스 정의
 public abstract class Animal {

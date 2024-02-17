@@ -90,3 +90,68 @@ catch(Exception e) { // 나머지 예외들(더 범위가 큼) 처리
 # finally #
 **finally**
 : 어떤 예외가 발생하더라도(발생하지 않아도) 반드시 실행되게 함
+<br><br>
+
+# 사용자 정의 예외 클래스 #
+자바 표준 API 예외 외에도 예외를 사용자가 직접 정의할 수 있다 <br>
+사용자 정의 예외 클래스도 ```Exception```으로 끝나는 이름이 좋다
+
+**사용자 정의 예외를 일반 예외로 선언**
+```
+public class XXXException extends Exception {
+	public XXXException() {}
+	public XXXException(String message) {
+		super(message);
+	}
+}
+```
+
+또는 <br>
+**사용자 정의 예외를 실행 예외로 설정**
+```
+public class XXXException extends RuntimeException {
+	public XXXException() {}
+	public XXXException(String message) {
+		super(message);
+	}
+}
+```
+- 사용자 정의 예외도 필드, 생성자, 메소드 선언을 포함할 수 있다
+- 하지만 대부분 생성자 선언만을 포함함
+- 생성자는 두 개를 선언하는 것이 일반적이다
+  - 1 매개변수가 없는 기본 생성자 <br>```public XXXException(){}```
+  - 2 예외 발생 원인 메세지를 전달하기 위해 String 타일의 매개변수를 갖는 생성자<br>catch{}블록의 예외 처리 코드에서 이용하기 위해 예외 메세지를 만드는 것이다.<br>```public XXException(String message){super(message);}```
+
+<br><br>
+
+# 예외 발생시키기 #
+**기본생성자** <br>
+```throw new XXXException;```
+<br> 혹은 <br>
+
+**throws를 이용해 해당 예외를 발생시키는(던져주는) 메소드** <br>
+```throw new XXXException("메시지");``` <br>
+- 예외 발생 코드를 가진 메소드는 자기 내부에서 try-catch로 예외를 처리할 수도 있지만 <br>
+- 대부분 **자신을 호출한 곳에서** 예외를 처리하도록 **throws**로 예외를 떠넘긴다.
+- 따라서 throws 키워드를 포함한 메소드느 호출한 곳에서 아래와 같은 예외처리를 해줘야 함
+  ```
+    try{
+        method();
+    } catch(XXXException e){
+        예외 처리 코드;
+    }
+  ```
+  <br><br>
+  ## printStackTrace ##
+  - 예외 발생 코드를 추적해 모두 콘솔에 출력하는 역할
+  - 어떤 예외가 어디서 발생했는지 알려줌
+  
+  <br><br>
+  ## throw와 throws의 차이 ##
+  - **throw**
+    - 메소드 내에서 예외를 발생시킬 때 사용함
+    - ```throw new BalanceInsufficientException()```
+  - **throws**
+    - 메소드 선언부에 사용
+    - 해당 메소드가 처리하지 않은 예외를 호출자에게 전달
+    - ```public void withdraw(int money) throws BalanceInsufficientException```

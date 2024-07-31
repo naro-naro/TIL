@@ -1,5 +1,5 @@
 # 데이터 전처리 : 특정 분석에 적합하게 데이터 가공
-# dplyr : 데이터 전처리에 자주 사용
+# dplyr : 데이터 전처리 패키지
 # %>% 파이프 연산자를 사용해 체인 형식 코드 사용 지원
 
 
@@ -93,6 +93,23 @@ df_cols_rename <- rename(df_cols_rename, 부상신고자수_월=월...3)
 df_cols_rename
 
 
+# 새로운 데이터 불러오기
+setwd("C:/Users/admin/Documents/GitHub/TIL/R/R Programming and Big Data Analysis/Data_Analysis/r_exam")
+g_data <-read.csv("서울특별시_강남구_불법주정차단속현황_20210208.csv", fileEncoding="euc-kr", header=T)
+head(g_data)
 
+g_data %>% subset(부과건수>=60000 | 견인건수>=7000)
+arrange(g_data, desc(부과건수))
+select(g_data, 부과건수, 단속원금.원.)
 
-g_data <-read.csv("")
+# 총건수 : 새로운 필드값..컬럼 추가
+g_data2 <- mutate(g_data, 총건수=부과건수+견인건수)
+head(g_data2)
+
+summarise(g_data, mean(단속원금.원.))
+group_by(g_data, 연도) %>% 
+  summarise(부과건수_평균 = mean(부과건수), 
+            부과건수_합계 = sum(부과건수), n=n())
+
+x <- filter(g_data, 부과건수>=10000, 연도==2019)
+x

@@ -4,7 +4,7 @@
 vis <- c(95, 70, 65, 80, 62, 45, 80, 97)
 names(vis) <- c('sam', 'anne', 'alice', 'julie'
            , 'michael', 'tom', 'jake', 'diana')
-vis
+h_data <- c(65, 83, 75, 80, 77, 72, 87, 67, 56, 97)
 
 
 # 1. 막대그래프
@@ -39,4 +39,34 @@ dotchart(vis, color=c('red', 'black'), lcolor='yellow',
 
 # 3. 파이차트
 # raidus : 반지름
-pie(vis, radius=15)
+# border : 테두리 색상
+# clockwise : T - 시계방향 / F - 반시계방향
+# edges : 숫자가 클수록 원에 가까워짐
+# label : 이름 옆에 점수 표시
+# cex : 데이터 요소 글씨 크기 조정
+pie(vis, radius=10, border=6, clockwise = TRUE, edges = 100, 
+    main='midterm test', label = paste(names(vis), vis, "점"),
+    cex=2)
+
+
+# 4. 히스토그램(기술통계)
+# xlim : x값의 범위
+# border : 테두리 색상
+# density : 투명도
+# freq : T - 빈도 / F - 밀도
+# freq=F 일 때, lines(),curve() 그래프 겹쳐그리기 가능
+# par(mfrow=c(행,열)) : 그래프 행*렬로 여러 개 그리기
+
+par(mfrow=c(1,2))
+
+hist(h_data, xlab='score', col='lightblue',  main='midterm test', 
+     freq=T, xlim=c(40,100), border='blue', density=100)
+
+hist(h_data, xlab='score', col='lightblue',  main='midterm test', 
+     freq=F, xlim=c(40,100), border='blue', density=100)
+
+lines(density(h_data), col='red')
+
+# 정규분포함수
+x <- seq(40,100,10)
+curve(dnorm(x, mean=mean(h_data), sd=sd(h_data)), col="green", add=T)

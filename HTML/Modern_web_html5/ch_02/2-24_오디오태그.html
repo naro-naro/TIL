@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>audio tag</title>
+</head>
+<body>
+    <h1>audio 태그</h1>
+    <ul>
+        <li><b>src</b> : 경로 지정</li>
+        <li><b>preload</b> : 재생하기 전에 모두 불러올지 지정</li>
+        <li><b>autoplay</b> : 자동 재생</li>
+        <li><b>loop</b> : 반복</li>
+        <li><b>controls</b> : 재생 도구 출력</li>
+    </ul>
+    <hr>
+    <h2>웹 브라우저 별 지원 음성파일 형식</h2>
+    <table border="1">
+        <thead>
+            <tr>
+                <th></th>
+                <th>익스플로러</th>
+                <th>크롬</th>
+                <th>파이어폭스</th>
+                <th>사파리</th>
+                <th>오페라</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><b>mp3</b></td>
+                <td>O</td>
+                <td>O</td>
+                <td>O</td>
+                <td>O</td>
+                <td>O</td>
+            </tr>
+            <tr>
+                <td><b>ogg</b></td>
+                <td>X</td>
+                <td>O</td>
+                <td>O</td>
+                <td>O</td>
+                <td>O</td>
+            </tr>
+            <tr>
+                <td><b>wav</b></td>
+                <td>X</td>
+                <td>O</td>
+                <td>O</td>
+                <td>X</td>
+                <td>O</td>
+            </tr>
+        </tbody>
+    </table>
+    <hr>
+    <h3>싹쓰리 - 다시 여기 바닷가</h3>
+    <audio controls="controls">
+        <source src="C:\Users\admin\Music\cd 리핑\싹쓰리\다시 여기 바닷가\01 다시 여기 바닷가.mp3" autoplay loop type="audio/mp3">
+    </audio>
+</body>
+</html>

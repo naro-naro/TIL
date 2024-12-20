@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css selector basic</title>
+    <style>
+        /* img 태그 중 src 속성값이 png로 끝나는 태그 */
+        img[src$=png]{border: 5px solid red;}
+        img[src$=jpg]{border: 5px solid green;}
+        img[src$=gif]{border: 5px solid blue;}
+    </style>
+</head>
+<body>
+    <img src="cat.png" width="200" height="250">
+    <img src="dog.jpg" width="200" height="250">
+    <img src="bird.gif" width="200" height="250">
+</body>
+</html>

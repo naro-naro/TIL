@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>selector</title>
+</head>
+<body>
+    <h1>CSS 선택자</h1>
+    <h3>전부 외울 필요는 없다.</h3>
+    <p>참고 : <a href="http://www.w3.org/TR/CSS/">W3C 공식문서</a></p>
+    <table border="1">
+        <caption>CSS 선택자</caption>
+        <thead>
+            <tr>
+                <th>선택자 종류</th>
+                <th>선택자 형태</th>
+                <th>선택자 예</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>전체 선택자</td>
+                <td>*</td>
+                <td>*</td>
+            </tr>
+            <tr>
+                <td>태그 선택자</td>
+                <td>태그</td>
+                <td>h1</td>
+            </tr>
+            <tr>
+                <td>아이디 선택자</td>
+                <td>#아이디</td>
+                <td>#header</td>
+            </tr>
+            <tr>
+                <td>클래스 선택자</td>
+                <td>.클래스</td>
+                <td>.item</td>
+            </tr>
+            <tr>
+                <td>후손 선택자</td>
+                <td>선택자 선택자</td>
+                <td>header h1</td>
+            </tr>
+            <tr>
+                <td>자손 선택자</td>
+                <td>선택자 > 선택자</td>
+                <td>header > h1</td>
+            </tr>
+            <tr>
+                <td rowspan="6">속성 선택자</td>
+                <td>선택자[속성=값]</td>
+                <td>input[type=text]</td>
+            </tr>
+            <tr>
+                <td>선택자[속성~=값]</td>
+                <td>div[data-role~=row]</td>
+            </tr>
+            <tr>
+                <td>선택자[속성|=값]</td>
+                <td>div[data-role|=row]</td>
+            </tr>
+            <tr>
+                <td>선택자[속성^=값]</td>
+                <td>div[data-role^=row]</td>
+            </tr>
+            <tr>
+                <td>선택자[속성$=값]</td>
+                <td>div[data-role$=9]</td>
+            </tr>
+            <tr>
+                <td>선택자[속성*=값]</td>
+                <td>div[data-role*=row]</td>
+            </tr>
+            <tr>
+                <td rowspan="2">동위 선택자</td>
+                <td>선택자 + 선택자</td>
+                <td>h1 + div</td>
+            </tr>
+            <tr>
+                <td>선택자 ~ 선택자</td>
+                <td>h1 ~ div</td>
+            </tr>
+            <tr>
+                <td rowspan="8">구조 선택자</td>
+                <td>선택자:first-child</td>
+                <td>li:first-child</td>
+            </tr>
+            <tr>
+                <td>선택자:last-child</td>
+                <td>li:last-child</td>
+            </tr>
+            <tr>
+                <td>선택자:nth-child(수열)</td>
+                <td>li:nth-child(2n+1)</td>
+            </tr>
+            <tr>
+                <td>선택자:nth-last-child(수열)</td>
+                <td>li:nth-last-child(2n+1)</td>
+            </tr>
+            <tr>
+                <td>선택자:first-of-type</td>
+                <td>h1:first-of-type</td>
+            </tr>
+            <tr>
+                <td>선택자:last-of-type</td>
+                <td>h1:last-of-type</td>
+            </tr>
+            <tr>
+                <td>선택자:nth-of-type(수열)</td>
+                <td>h1:nth-of-type(2n-1)</td>
+            </tr>
+            <tr>
+                <td>선택자:nth-last-of-type(수열)</td>
+                <td>h1:nth-last-of-type(2n-1)</td>
+            </tr>
+            <tr>
+                <td rowspan="2">반응 선택자</td>
+                <td>선택자:active</td>
+                <td>div:active</td>
+            </tr>
+            <tr>
+                <td>선택자:hover</td>
+                <td>div:hover</td>
+            </tr>
+            <tr>
+                <td rowspan="4">상태 선택자</td>
+                <td>:checked</td>
+                <td>input:checked</td>
+            </tr>
+            <tr>
+                <td>:focus</td>
+                <td>input:focus</td>
+            </tr>
+            <tr>
+                <td>:enabled</td>
+                <td>input:enabled</td>
+            </tr>
+            <tr>
+                <td>:disabled</td>
+                <td>input:disabled</td>
+            </tr>
+            <tr>
+                <td rowspan="2">링크 선택자</td>
+                <td>:link</td>
+                <td>a:link</td>
+            </tr>
+            <tr>
+                <td>:visited</td>
+                <td>a:visited</td>
+            </tr>
+            <tr>
+                <td rowspan="5">문자 선택자</td>
+                <td>::first-letter</td>
+                <td>p::first-letter</td>
+            </tr>
+            <tr>
+                <td>::first-line</td>
+                <td>p::first-line</td>
+            </tr>
+            <tr>
+                <td>::after</td>
+                <td>p::after</td>
+            </tr>
+            <tr>
+                <td>::before</td>
+                <td>p::before</td>
+            </tr>
+            <tr>
+                <td>::selection</td>
+                <td>p::selection</td>
+            </tr>
+            <tr>
+                <td>부정 선택자</td>
+                <td>선택자:not(선택자)</td>
+                <td>li:not(.item)</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get-Post</title>
+</head>
+<body>
+    <h1>form 태그의 속성</h1>
+    <ul>
+        <li><b>action</b> : 입력 데이터의 전달 위치 지정</li>
+        <li><b>method</b> : 입력 데이터의 전달 방식 지정</li>
+    </ul>
+    <hr>
+    <h2>method 속성</h2>
+    <ol>
+        <li>
+            <b>GET</b>
+            <ul>
+                <li>URL 주소에 데이터 입력해서 전송(공개적)</li>
+                <li>데이터 용량에 제한O</li>
+            </ul>
+        </li>
+
+        <li>
+            <b>POST</b>
+            <ul>
+                <li>주소 변경X(비밀)</li>
+                <li>데이터 용량 제한X</li>
+            </ul>
+        </li>
+    </ol>
+    <hr>
+    <h3>GET방식과 POST방식</h3>
+    <form method="get">
+        <p>GET방식</p>
+        <input type="text" name="search">
+        <input type="submit">
+    </form>
+    <br>
+    <form method="post">
+        <p>POST방식</p>
+        <input type="text" name="search">
+        <input type="submit">
+    </form>
+</body>
+</html>

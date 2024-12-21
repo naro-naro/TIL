@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selector</title>
+    <style>
+        input[type=checkbox]:checked + div { height: 0px;}
+        /* input 태그의 type 속성값이 checkbox인 태그가 체크되었을 때
+        바로 뒤에 위치하는 div 태그의 height를 0으로 한다. */
+
+        div {
+            overflow: hidden;
+            width: 650px; height: 300px;
+
+            /* 변환효과 적용 */
+            -ms-transition-duration: 1s;
+            -webkit-transition-duration: 1s;
+            -moz-transition-duration: 1s;
+            transition-duration: 1s;
+        }
+    </style>
+</head>
+<body>
+    <input type="checkbox">
+    <div>
+        <h1>Lorem ipsum</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe odio, maxime laboriosam optio quae asperiores quod magni deserunt recusandae illum accusamus repudiandae, ad, aliquid suscipit ab nisi adipisci accusantium quasi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo commodi aspernatur nesciunt, magnam quisquam vel optio eum laborum unde voluptas, soluta quis perspiciatis repellat at harum placeat rerum consectetur quia? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam corporis quae quia reprehenderit! Nam, vero distinctio? Debitis quod officia cum aliquid libero, provident eaque, nihil, suscipit doloremque tempora minima in! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum dolorum reprehenderit asperiores praesentium nihil debitis officiis temporibus ea. Dolor amet, odit non adipisci officiis eius itaque omnis et possimus quisquam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore eius facilis nihil totam nulla eveniet reiciendis soluta sapiente nobis. Similique quam dignissimos totam tempora qui minima consectetur aliquid ipsam porro. Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus sit sed, quod, quibusdam officia voluptates temporibus optio, maiores harum beatae ipsum incidunt laudantium alias? Nihil molestias doloribus cum aspernatur a.</p>
+    </div>
+</body>
+</html>

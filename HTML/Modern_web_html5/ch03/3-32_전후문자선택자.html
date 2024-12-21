@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>전후문자선택자</title>
+    <style>
+        p {counter-increment: rint;}
+        p::before {content: counter(rint) ".";}
+        p::after {content: " - " attr(data-page) " page";}
+        p::first-letter {font-size: 3em; color: orange;}
+        b {color: orange;}
+    </style>
+</head>
+<body>
+    <h1>전후 문자 선택자</h1>
+    <p data-page="52">태그 뒤에 위치하는 공간을 선택 <b>::after</b> Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam exercitationem, nisi quas nostrum laborum perspiciatis quod deserunt, odio vitae incidunt delectus officia quo veritatis rem nesciunt maxime tempora quia? Ab. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis quas rem fuga saepe aliquid in sequi magni dicta obcaecati nemo nam voluptatibus ea consequuntur, placeat consectetur voluptates est tenetur eligendi? Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, totam debitis voluptatum quidem consequuntur nostrum aut voluptas ab praesentium iste incidunt quos, laboriosam maxime perspiciatis, dignissimos laborum. Quidem, maxime quaerat.</p>
+    <p data-page="273">태그 앞에 위치하는 공간을 선택 <b>::before</b> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Alias sunt magnam numquam placeat sint suscipit quidem nisi fugiat voluptates reprehenderit illum nam, atque laborum nostrum omnis dolores a. Recusandae, qui. Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut eveniet tenetur odit quae ea voluptatibus magni modi amet corporis placeat accusantium quam soluta optio sit molestiae, fugit sunt consequuntur. Aspernatur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit ad cupiditate, dolores nobis quidem dolorem nihil odio, at delectus quod unde illo obcaecati dolore, doloribus dolor possimus animi veniam! Voluptate. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, repudiandae aperiam quasi, amet corporis aliquid quis dicta iure non aliquam consequatur, aspernatur enim quod. Saepe quibusdam atque similique eligendi pariatur. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit saepe soluta illo? Est sit labore provident doloremque placeat neque accusantium ducimus necessitatibus laboriosam nemo, cum illo voluptatem! Aut, nobis autem.</p>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display속성</title>
+    <style>
+        li:first-child {display: none; background-color: aqua;}
+        li:nth-child(3) {display: block; background-color: bisque;}
+        li:nth-child(4) {
+            display: inline; background-color: yellowgreen;
+            width: 300px; height: 100px;
+            margin: 10px;
+        }
+        li:last-child {
+            display: inline-block; background-color: pink;
+            width: 300px; height: 100px;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Display속성</h1>
+    <ul>
+        <li>Lorem ipsum</li>
+        <li><b>none</b> : 보이지 않게</li>
+        <li><b>block</b> : block 형식으로</li>
+        <li>
+            <b>inline</b> : inline 형식으로 -> width, height : 적용X, margin : 좌우만
+        </li>
+        <li>
+            <b>inline-block</b> : inline-block 형식으로 -> width, height : 적용O, margin : 상하좌우
+        </li>
+    </ul>
+</body>
+</html>

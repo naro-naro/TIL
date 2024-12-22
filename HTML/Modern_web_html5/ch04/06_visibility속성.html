@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>visibility 속성</title>
+    <style>
+        li {visibility: visible;}
+        li:first-child {visibility: hidden;}
+        table {visibility: hidden;}
+        /* table {visibility: collapse;} */
+    </style>
+</head>
+<body>
+    <h1>visibility 속성</h1>
+    <ul>
+        <li>Lorem ipsum</li>
+        <li><b>visible</b> : 태그를 보이게</li>
+        <li><b>hidden</b> : 태그를 보이지 않게</li>
+        <li><b>collapse</b> : table 태그를 보이지 않게</li>
+    </ul>
+    <p>
+        hidden : 테이블 크기만큼 안보이게 <br>
+        collapse : 빈 공간 없이 안보이게 (table 태그에만 적용)
+    </p>
+    <table>
+        <tr>
+            <td>1행 1열</td>
+            <td>1행 2열</td>
+        </tr>
+        <tr>
+            <td>2행 1열</td>
+            <td>2행 2열</td>
+        </tr>
+        <tr>
+            <td>3행 1열</td>
+            <td>3행 2열</td>
+        </tr>
+    </table>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti consequatur tempore quas incidunt magni veniam reprehenderit est ipsum. Quae, voluptatum eos laboriosam vero nam qui doloremque harum? Sapiente, neque quidem.</p>
+    <table>
+        <tr>
+            <td>1행 1열</td>
+            <td>1행 2열</td>
+        </tr>
+        <tr>
+            <td>2행 1열</td>
+            <td>2행 2열</td>
+        </tr>
+        <tr>
+            <td>3행 1열</td>
+            <td>3행 2열</td>
+        </tr>
+    </table>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti consequatur tempore quas incidunt magni veniam reprehenderit est ipsum. Quae, voluptatum eos laboriosam vero nam qui doloremque harum? Sapiente, neque quidem.</p>
+</body>
+</html>

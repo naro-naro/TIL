@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>margin과 padding</title>
+    <style>
+        div {
+            width: 100px; height: 100px;
+            background-color: orange;
+
+            border: 10px solid black;
+            margin: 10px; padding: 30px;
+        }
+
+        div:nth-child(2) {
+            border: 1px solid black;
+            margin: 10px 50px 10px 50px;
+            padding: 10px 50px 10px 50px;
+        }
+
+        div:last-child {
+            border: 1px solid black;
+            margin: 0 50px;
+            padding: 0 50px;
+        }
+    </style>
+</head>
+<body>
+    <h1>margin과 padding</h1>
+    <ul>
+        <li><b>margin</b> : 외부</li>
+        <li><b>padding</b> : 내부</li>
+    </ul>
+    <hr>
+    <div></div>
+
+    <div></div>
+
+    <div></div>
+</body>
+</html>

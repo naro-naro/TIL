@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>font 속성</title>
+    <style>
+        .font-size {
+            font-size: large;
+        }
+
+        .font-family{
+            font-family: 'Times New Roman', serif, Arial;
+        }
+
+        .font-style {
+            font-style: italic;
+        }
+
+        .font-weight {
+            font-weight: bold;
+        }
+
+        .text-align {
+            text-align: center;
+        }
+
+        .text-decoration {
+            text-decoration: none;
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <h1>font 속성</h1>
+    <ul>
+        <li class="font-size">
+            <b>font-size</b> : 크기단위 또는 키워드
+            <ul>
+                <li>px, em, %</li>
+                <li>large, medium, small, ...</li>
+                <li>cf. h1태그 : 32px / p태그 : 16px</li>
+            </ul>
+        </li>
+        <li class="font-family">
+            <b>font-family</b> : 폰트 지정
+            <ul>
+                <li>폰트 이름이 한 단어 : 따옴표X</li>
+                <li>폰트 이름이 여러 단어 : 따옴표O</li>
+                <li>원하는 폰트가 없을 때를 대비하여 여러 폰트를 적기</li>
+                <li>기본 폰트 : Serif(명조), Sans-serif(고딕), Mono space(고정폭 글꼴)</li>
+            </ul>
+        </li>
+        <li class="font-style">
+            <b>font-style</b> : 폰트 기울기(italic)
+        </li>
+        <li class="font-weight">
+            font-weight : 폰트 두께
+            <ul>
+                <li>기본 두께 : 400</li>
+                <li>두껍게 : 700 or bold</li>
+                <li>두께를 지원하지 않는 폰트에는 적용 불가</li>
+            </ul>
+        </li>
+    </ul>
+    <p class="text-align">
+        <b>* text-align</b> : 글자 정렬 <br>
+        left, center, right, ... <br>
+        inline 형식 태그에는 text-align 사용 불가<br>
+        (중앙이란 개념이 없음)
+    </p>
+    <ul>
+        <li>
+            <b>text-decoration</b> : a태그의 밑줄 제거
+            <ul>
+                <a href="http://naver.com" class="text-decoration">naver</a>
+            </ul>
+        </li>
+    </ul>
+</body>
+</html>

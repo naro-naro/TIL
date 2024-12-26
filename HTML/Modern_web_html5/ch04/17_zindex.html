@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>z-index</title>
+    <style>
+        .box {
+            position: absolute;
+            width: 100px; height: 100px;
+        }
+        .red {
+            background-color: red;
+            left: 10px; top: 10px;
+            z-index: 100;
+        }
+        .green {
+            background-color: green;
+            left: 50px; top: 50px;
+            z-index: 10;
+        }
+        .blue {
+            background-color: blue;
+            left: 90px; top: 90px;
+            z-index: 1;
+        }        
+    </style>
+</head>
+<body>
+    <div class="red box"></div>
+    <div class="green box"></div>
+    <div class="blue box"></div>
+    <br><br><br><br><br><br><br><br>
+    <h1>z-index</h1>
+    <p>
+        뒤에 입력한 태그가 상위로 올라옴<br>
+        레이어 순서를 변경할 때 z-index 속성 사용<br>
+        z-index에는 숫자를 입력하며, 숫자가 클수록 앞에 오게 됨
+    </p>
+</body>
+</html>

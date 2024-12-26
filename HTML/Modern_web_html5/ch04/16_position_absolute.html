@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>position : absolute</title>
+    <style>
+        .box {
+            position: absolute;
+            width: 100px; height: 100px;
+        }
+        .red {
+            background-color: red;
+            left: 10px; top: 10px;
+        }
+        .green {
+            background-color: green;
+            left: 50px; top: 50px;
+        }
+        .blue {
+            background-color: blue;
+            left: 90px; top: 90px;
+        }
+        body > div {
+            width: 400px; height: 100px;
+            border: 3px solid black;
+            position: relative;
+            overflow-y: scroll;
+        }
+    </style>
+</head>
+<body>
+    <h1>position : absolute</h1>
+    <div>
+        <div class="red box"></div>
+        <div class="green box"></div>
+        <div class="blue box"></div>
+    </div>
+    <p>뒤에 입력한 태그가 상위에 올라감</p>
+    <hr>
+    <h2>position : absolute의 문제점</h2>
+    <ul>
+        <li>
+            1. div 태그가 영역을 차지하지 않는다.
+        </li>
+        <li>
+            2. 색상 상자가 자신의 부모를 기준으로 위치를 잡지 않는다.
+        </li>
+    </ul>
+    <hr>
+    <h3>해결법</h3>
+    <ul>
+        <li>자손의 position 속성에 absolute를 적용하면 부모는 height 속성 사용하기.</li>
+        <li>부모의 position 속성에 relative 적용하기.</li>
+    </ul>
+    <hr>
+    <h4>overflow 속성</h4>
+    <ul>
+        <legend>내부 요소가 부모의 범위를 벗어날 때 처리 방법</legend>
+        <li><b>hidden</b> : 영역을 벗어나는 부분을 보이지 않게 처리</li>
+        <li>
+            <b>scroll</b> : 영역을 벗어나는 부분을 스크롤(가로 세로 모두)로 처리
+            <ol>
+                <li>overflow-x : 가로 스크롤만 생성</li>
+                <li>overflow-y : 세로 스크롤만 생성</li>
+            </ol>
+        </li>
+    </ul>
+</body>
+</html>

@@ -56,3 +56,27 @@ par(new=T)
 line_chart=1000:2000
 plot(line_chart, col="blue", axes=F, ann=F, type="l")
 text(x=600, y=1650, "선형", col="blue")
+
+# 다양한 형태의 그래프
+par(mfrow=c(2,2))
+plot(csv3, col="red", axes=T, ann=T, type='l', lwd=1,
+     main="2018 중상자수~경상자수 현황")
+plot(csv3, col="red", axes=T, ann=T, type='o', lwd=1,
+     main="2018 중상자수~경상자수 현황")
+plot(csv3, col="red", axes=T, ann=T, type='h', lwd=1,
+     main="2018 중상자수~경상자수 현황")
+plot(csv3, col="red", axes=T, ann=T, type='s', lwd=1,
+     main="2018 중상자수~경상자수 현황")
+
+# 히스토그램
+csv4 <- csv2[c(1:12), 5]
+par(mfrow=c(1,2))
+hist(csv4, xlab='사고건수', col='lightyellow',
+     freq=T, main='사고건수', labels = T,
+     border='pink')
+hist(csv4, xlab='사고건수', col='lightyellow',
+     freq=F, main='사고건수', labels = T,
+     border='pink')
+lines(density(csv4), col='red')
+x <- seq(1300, 1800, 100)
+curve(dnorm(x, mean = mean(csv4), sd=sd(csv4)), col='blue', add=T)

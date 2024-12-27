@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>float layout</title>
+    <style>
+        body {
+            width: 960px;
+            margin: 0 auto;
+        }
+
+        #aside {
+            width: 200px;
+            float: left;
+        }
+
+        #section {
+            width: 760px;
+            float: left;
+        }
+
+        #wrap {
+            overflow: hidden;
+        }
+    </style>
+</head>
+<body>
+    <div id="header"><h1>Header</h1></div>
+    <div id="nav"><h1>Navigation</h1></div>
+    <div id="wrap">
+        <div id="aside">
+            <h1>Aside</h1>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro laborum perferendis praesentium a sequi. Omnis autem adipisci cupiditate iste perferendis sed tempore natus eos mollitia quasi est, ad qui totam.</p>
+        </div>
+        <div id="section">
+            <h1>Section</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, sapiente architecto, in quis asperiores dignissimos culpa nesciunt labore, corrupti pariatur dicta nobis! Voluptate fugiat unde vel, dolores deleniti pariatur? Neque. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse quibusdam corrupti tempora ipsam dolorum nemo aspernatur sunt consequatur unde ut voluptatum asperiores, eius illo pariatur assumenda at voluptate et obcaecati.</p>
+        </div>
+    </div>
+    <div id="footer"><h1>Footer</h1></div>
+</body>
+</html>
